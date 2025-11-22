@@ -1,28 +1,12 @@
 class APIKey:
-    def __init__(
-        self,
-        id,
-        name,
-        hashed_key,
-        scopes,               # list[str]
-        revoked,
-        expires_at,
-        created_by,
-        created_at,
-        updated_at
-    ):
+    def __init__(self, id, user_id, key_hash, name, scopes, is_active, is_revoked, created_at, expires_at, last_used_at):
         self.id = id
+        self.user_id = user_id
+        self.key_hash = key_hash
         self.name = name
-        self.hashed_key = hashed_key
         self.scopes = scopes
-        self.revoked = revoked
-        self.expires_at = expires_at
-        self.created_by = created_by
+        self.is_active = is_active
+        self.is_revoked = is_revoked
         self.created_at = created_at
-        self.updated_at = updated_at
-
-    def check_scope(self, scope):
-        pass
-
-    def revoke(self, actor_id):
-        pass
+        self.expires_at = expires_at
+        self.last_used_at = last_used_at
