@@ -1,0 +1,210 @@
+﻿# Database files - contains scraped data
+*.db
+*.sqlite
+*.sqlite3
+dataset.db
+example.db
+# Database configuration with credentials
+**/config.py
+**/database_config.py
+.env
+.env.local
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+# Logs
+*.log
+logs/
+# Node modules (frontend)
+node_modules/
+frontend/node_modules/
+# Build files
+frontend/build/
+frontend/dist/
+# Scraped HTML content
+**/scraped_html/
+**/downloads/
+**/data/
+# Exports
+exports/
+**/exports/
+# Backup files
+*.bak
+*.backup
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+../*.zip
+Beladot.zip
+DataAnalysisMasterFile.zip
+therapy.zip
+# Private tokens and API keys
+token.txt
+tokenfortherapy.txt
+*.token
+*.key
+*.pem
+*.cert
+*.credentials
+**/secrets/
+**/tokens/
+.env*
+!.env.example
+# Personal data and metadata
+personal*.txt
+personal*.docx
+personal*.json
+**/resumes/
+**/cv/
+contact_info.txt
+private_notes.txt
+instalations.txt
+options.txt
+"personal data.txt"
+# Project documentation (personal)
+~$*.docx
+~$*.xlsx
+project*.docx
+instructions*.docx
+*.tmp
+"how to build my model.txt"
+"steps to get coordinates.txt"
+"pre functions for prep of ai and recomendations..txt"
+# Database backups with sensitive data
+*.sql
+*.dump
+backup/
+backups/
+database/
+# Configuration files with credentials
+config.ini
+settings.json
+credentials.json
+**/credentials/
+# Session data
+**/sessions/
+*.session
+# Large data files (exclude from git, keep samples only)
+*.csv
+!example.csv
+!sample.csv
+dataForLearning/
+warehouse/
+ghosttown.csv
+# Browser data
+browser_history.db
+cookies.db
+History
+Cookies
+# Temporary files
+temp/
+tmp/
+*.temp
+# Screenshot metadata
+screenshot*.txt
+# Submodules (if not needed)
+smartfile/
+textCleanUp/
+therapy/
+Beladot/
+DataAnalysisMasterFile/
+# Compiled files
+*.pyc
+*.class
+*.o
+*.obj
+# Test coverage
+htmlcov/
+.coverage
+.pytest_cache/
+.tox/
+# Images (large files)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+!logo.png
+!icon.png
+!favicon.ico
+# Microsoft Office temp files
+~$*
+# macOS
+.AppleDouble
+.LSOverride
+._*
+# Windows
+[Tt]humbs.db
+[Dd]esktop.ini
+.BIN/
+*.lnk
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+# VS Code
+.vscode/
+*.code-workspace
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+# PyInstaller
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+# Jupyter Notebook
+.ipynb_checkpoints
+# pyenv
+.python-version
+# Environment variables
+.env
+.env.*
+!.env.example
