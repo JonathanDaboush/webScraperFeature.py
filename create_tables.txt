@@ -1,0 +1,59 @@
+{source}
+<?php
+$db = JFactory::getDbo();
+
+$queries = [
+    "CREATE DATABASE IF NOT EXISTS soldiers",
+    "USE soldiers",
+    "SET FOREIGN_KEY_CHECKS = 0",
+    "DROP TABLE IF EXISTS accession_keywords",
+    "DROP TABLE IF EXISTS keywords",
+    "DROP TABLE IF EXISTS accession_numbers",
+    "DROP INDEX idx_keyword ON keywords",
+    "DROP INDEX idx_accession_keyword ON accession_keywords",
+    "SET FOREIGN_KEY_CHECKS = 1",
+    "CREATE TABLE accession_numbers (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        accession_number VARCHAR(255),
+        source TEXT,
+        mode_of_acquisition VARCHAR(255),
+        entered_museum DATE,
+        accessioned_date DATE,
+        accessioned_by VARCHAR(255),
+        name_of_objects TEXT,
+        collection_name VARCHAR(255),
+        object_description TEXT,
+        additional_notes TEXT,
+        completed BOOLEAN,
+        soldiers_profile BOOLEAN,
+        file_merged BOOLEAN,
+        location VARCHAR(255)
+    )",
+    "CREATE TABLE keywords (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        keyword VARCHAR(255) NOT NULL UNIQUE
+    )",
+    "CREATE TABLE accession_keywords (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        accession_id INT NOT NULL,
+        keyword_id INT NOT NULL,
+        UNIQUE (accession_id, keyword_id),
+        FOREIGN KEY (accession_id) REFERENCES accession_numbers(id) ON DELETE CASCADE,
+        FOREIGN KEY (keyword_id) REFERENCES keywords(id) ON DELETE CASCADE
+    )",
+    "CREATE INDEX idx_keyword ON keywords(keyword)",
+    "CREATE INDEX idx_accession_keyword ON accession_keywords(accession_id, keyword_id)"
+];
+
+foreach ($queries as $query) {
+    try {
+        $db->setQuery($query);
+        $db->execute();
+    } catch (Exception $e) {
+        echo "<div style='color:red;'>❌ Error in query: " . htmlspecialchars($query) . "<br>Reason: " . $e->getMessage() . "</div>";
+    }
+}
+
+echo "<div style='color:green;'> All SQL commands processed.</div>";
+?>
+{/source}

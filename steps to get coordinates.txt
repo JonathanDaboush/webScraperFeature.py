@@ -1,0 +1,17 @@
+steps to get coordinates and all needed info:
+
+go too map you want to look up
+click download button
+click three dots button and click download kml
+all details are in kml file ie 
+
+<Placemark>
+        <name>Japanese Settlement Heritage Marker</name>
+        <description>Highway heritage signs offer a glimpse into Alberta’s past, and often offer a place to stretch your legs. Register for your free pass, take a selfie at a heritage highway sign and submit to the Rumble Alberta Highway Sign Challenge. http://rumblealberta.com/heritage-signs</description>
+        <styleUrl>#icon-1535-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -112.709561,49.465088,0
+          </coordinates>
+        </Point>
+      </Placemark>

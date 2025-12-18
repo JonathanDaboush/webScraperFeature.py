@@ -1,0 +1,9 @@
+DEFAULT_MODEL_ID = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+
+("thedevastator/nlp-mental-health-conversations/train.csv", ['Response', 'Context']),
+("arnmaud/therapist-qa/Psych_data.csv", ['Answer', 'Question']),
+("zuhairhasanshaik/datacsv/reddit_text-davinci-002.csv", None),
+("hf://datasets/RishiKompelli/TherapyDataset/data.csv", None)
+
+4. Preprocessing + Compression (Optional Optimization)
+pool collection small but numerous to bigger ones.

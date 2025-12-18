@@ -1,0 +1,37 @@
+✅ 1. How to Create a New Web Page in Joomla
+this i used for the pages of ww1 and ww2.
+
+In Joomla, a “page” is typically created by creating an article or using a component view, and linking it to a menu item.
+
+Option A: Create a Simple Page with an Article
+Go to Content > Articles > + New
+
+Title it (e.g., “Special Projects”)
+
+Add your content (text, images, HTML, etc.)
+
+Set Status to Published
+
+Click Save & Close
+
+Now the article exists — but it’s not linked anywhere yet. That’s step 2.
+
+✅ 2. How to Add a Menu Header That Links to the Page
+Go to Menus > Main Menu > + New
+
+Menu Title: What users will see (e.g., “Special Projects”)
+
+Menu Item Type:
+
+Click Select
+
+Choose Articles > Single Article
+
+Select Article: Choose the one you just created
+
+Set Status to Published
+
+Click Save & Close
+
+💡 It’ll now appear in the top nav bar unless your template suppresses it or you’re using a menu override.
+

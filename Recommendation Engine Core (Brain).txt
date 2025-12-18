@@ -1,0 +1,175 @@
+1. Overall Role of Managers
+These two managers are orchestrators, not CRUD handlers.
+
+They receive explicit instructions (task objects) and decide which components to use.
+
+They never perform raw database operations or AI computations themselves – they call utils, repos, and other specialized managers (like PdfManager, DocxManager, TxtManager).
+
+2. FileFolderManager – Final Design
+Purpose
+Executes fully defined tasks related to files and folders.
+
+Can create, summarize, edit, compare, or search files/folders.
+
+Handles file-type-specific actions by delegating to the appropriate managers.
+
+Inputs
+A task object containing:
+
+Task type (summarize, create, edit, compare, search).
+
+Target file/folder or page (if applicable).
+
+Storage location (if creating).
+
+Additional parameters (metadata, permissions, content, context).
+
+Key Responsibilities
+Validate user and resource using UserCheckingUtil.
+
+Route task type to the correct internal handler:
+
+Summarize
+
+Search
+
+Compare
+
+Edit
+
+Create new file/folder
+
+Each handler:
+
+Uses TraversalUtil to locate items if necessary.
+
+Calls appropriate file-type manager (PdfManager, DocxManager, TxtManager) for content handling.
+
+Uses SummarizerUtil, EmbeddingUtil, and CRUDUtil for summaries, embeddings, and storage.
+
+Updates FileRepository with changes (summaries, embeddings, metadata).
+
+Notifies RecommendationManager when changes affect relationships or recommendations.
+
+Outputs
+Returns results for search, comparison, summaries, etc.
+
+Confirms creation, edits, or deletions were successful.
+
+Core Principles
+No interpretation of vague queries: FileFolderManager only executes clear, explicit instructions.
+
+No low-level operations: Uses existing utilities and repositories for all actions.
+
+Extensible: Adding a new task type only requires adding a handler and mapping it.
+
+3. RecommendationManager – Final Design
+Purpose
+Generates personalized, context-aware recommendations.
+
+Maintains and refreshes the relationship graph of files/folders.
+
+Prioritizes files/folders based on user history, current system state, and semantic similarity.
+
+Inputs
+User history: Actions such as accepted, rejected, and ignored recommendations.
+
+Current system state: Active tasks, updated files, relationship graph.
+
+Optional task/context for context-aware recommendations.
+
+Key Responsibilities
+Update relationships when files change:
+
+Use RelationshipModel and stored embeddings to rebuild the relationship graph.
+
+Remove outdated edges and add new connections.
+
+Remove a file from the system:
+
+Remove node from relationship graph.
+
+Remove associated recommendations.
+
+Generate recommendations for a user:
+
+Analyze user history and current tasks.
+
+Retrieve candidate files from the graph and repositories.
+
+Score candidates using embeddings, task relevance, and personalization.
+
+Save the ranked list to RecommendationRepository.
+
+Outputs
+Returns a ranked list of recommendations.
+
+Maintains up-to-date relationship data for use by other components.
+
+Core Principles
+Focuses entirely on recommendations and relationships – no file CRUD or task execution.
+
+Uses embeddings and relationship graph as the backbone for ranking and relevance.
+
+Adjusts results based on user patterns (accepted/rejected items).
+
+4. Integration Between the Two Managers
+FileFolderManager updates RecommendationManager when:
+
+A file or folder is created, edited, or deleted.
+
+Summaries and embeddings are regenerated, affecting relationships.
+
+RecommendationManager recalculates relationships and recommendations when notified.
+
+This design keeps each manager focused on its domain and avoids mixing responsibilities.
+
+5. Key Architectural Benefits
+Modular: Each handler calls external components, making it easy to add or replace functionality.
+
+Separation of concerns:
+
+FileFolderManager = task executor for files/folders.
+
+RecommendationManager = analyzer and ranking system.
+
+Future-proof: Adding new actions or recommendation types doesn’t require rewriting the managers.
+
+Multi-user ready: Integrated with UserCheckingUtil and repos, ensuring proper validation and concurrency support.
+
+1. FileFolderManager Uses:
+CRUDExecutor.py → For creating, editing, or deleting files/folders.
+
+file_permission_service.py → For validating user access and applying default permissions.
+
+pdf_manager.py / docx_manager.py / txt_manager.py → For file-type-specific operations (extracting content, editing).
+
+summarization_model.py → For generating summaries.
+
+embedding_model.py → For generating embeddings.
+
+dbMemory.py & repositories → For saving metadata, summaries, embeddings, and relevance scores.
+
+emailUtil.py → Only if tasks trigger notifications (e.g., notifying a user when a new file is created).
+
+Caching.py → For quick lookups if needed (e.g., recently accessed files).
+
+UserCheckingUtil (new) → For user validation and concurrency handling.
+
+UserManager → For user account management tasks (assigning ownership, applying user-specific logic).
+
+RecommendationManager → Whenever a file/folder change requires relationship or recommendation updates.
+
+2. RecommendationManager Uses:
+relationship_model.py → Builds and maintains the relationship graph.
+
+embedding_model.py → For similarity calculations (task, context, file relationships).
+
+dbMemory.py & repositories → To fetch user history, candidate files, and store ranked recommendations.
+
+user_action_repository → To personalize recommendations based on user behavior.
+
+UserManager → To access user data (groups, history) when generating recommendations.
+
+
+

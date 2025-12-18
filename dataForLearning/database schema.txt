@@ -1,0 +1,201 @@
+CREATE TABLE Clients (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    Phone_number VARCHAR(20),
+    address TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Taxes (
+    tax_id INT PRIMARY KEY AUTO_INCREMENT,
+    tax_name VARCHAR(255) NOT NULL,
+    tax_rate DECIMAL(5, 2) NOT NULL,
+    tax_description TEXT,
+    effective_date DATE NOT NULL,
+    expiration_date DATE,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE AccountType (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    account_name VARCHAR(255) UNIQUE NOT NULL,
+    account_description VARCHAR(255),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+CREATE TABLE Appointments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    set_still BOOLEAN NOT NULL DEFAULT 0,
+    appointment_Description TEXT,
+    appointment_Rank INT,
+    start_time DATETIME NOT NULL,
+    end_time DATETIME NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    FOREIGN KEY (client_id) REFERENCES Clients(id)
+);
+
+
+CREATE TABLE ReceiptDetails (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    receipt_number VARCHAR(255) UNIQUE NOT NULL,
+    date_of_transaction DATE NOT NULL,
+    vendor_name VARCHAR(255) NOT NULL,
+    vendor_address TEXT,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    payment_method VARCHAR(50),
+    tax_amount DECIMAL(10, 2),
+    account_type_id INT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (account_type_id) REFERENCES AccountType(id)
+);
+
+CREATE TABLE Employees (
+    employee_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each employee, auto-incremented
+    first_name VARCHAR(255) NOT NULL,           -- Employee's first name, required
+    last_name VARCHAR(255) NOT NULL,            -- Employee's last name, required
+    middle_name VARCHAR(255),                   -- Employee's middle name, optional
+    gender ENUM('Male', 'Female', 'Other') NOT NULL, -- Gender with specified valid values, required
+    date_of_birth DATE NOT NULL,                -- Date of birth, required
+    ssn_or_tax_id VARCHAR(255) UNIQUE NOT NULL, -- Social Security Number or Tax ID, unique and required
+    email VARCHAR(255) UNIQUE NOT NULL,         -- Email address, unique and required
+    phone_number VARCHAR(50),                   -- Phone number, optional
+    address TEXT,                               -- Address, optional
+    job_title VARCHAR(255) NOT NULL,            -- Job title, required
+    department_id INT,                          -- Department ID, optional, foreign key reference
+    hire_date DATE NOT NULL,                    -- Hire date, required
+    termination_date DATE,                      -- Termination date, optional
+    employment_status ENUM('Active', 'Terminated', 'On Leave', 'Retired') NOT NULL, -- Employment status, required
+    salary DECIMAL(15, 2) NOT NULL,             -- Salary, required
+    bank_account_number VARCHAR(255),           -- Bank account number, optional
+    bank_name VARCHAR(255),                     -- Bank name, optional
+    payment_method ENUM('Direct Deposit', 'Check', 'Cash') NOT NULL, -- Payment method, required
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for record creation
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- Timestamp for record updates
+);
+
+CREATE TABLE Departments (
+    department_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each department, auto-incremented
+    department_name VARCHAR(255) UNIQUE NOT NULL, -- Department name, unique and required
+    manager_id INT,                               -- Manager ID, optional, foreign key reference
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP, -- Timestamp for record creation
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for record updates
+    FOREIGN KEY (manager_id) REFERENCES Employees(employee_id) -- Foreign key linking to Employees table
+);
+
+CREATE TABLE EmployeeAppointments (
+    EmployeeID INT, -- References the Employee ID from the Employees table
+    AppointmentID INT, -- References the Appointment ID from the Appointments table
+    PRIMARY KEY (EmployeeID, AppointmentID), -- Composite primary key to ensure uniqueness of the relationship
+    FOREIGN KEY (EmployeeID) REFERENCES Employees(employee_id) ON DELETE CASCADE, -- Ensures referential integrity with Employees
+    FOREIGN KEY (AppointmentID) REFERENCES Appointments(AppointmentID) ON DELETE CASCADE -- Ensures referential integrity with Appointments
+);
+
+CREATE TABLE ReceiptItems (
+    id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each receipt item, auto-incremented
+    receipt_key INT, -- References the associated receipt in the ReceiptDetails table
+    receipt_description TEXT NOT NULL, -- Description of the item, required
+    quantity INT NOT NULL CHECK (quantity >= 0), -- Quantity of the item, must be non-negative
+    price_per_unit DECIMAL(10, 2) NOT NULL CHECK (price_per_unit >= 0), -- Price per unit, must be non-negative
+    subtotal DECIMAL(10, 2) NOT NULL CHECK (subtotal >= 0), -- Subtotal, must be non-negative
+    FOREIGN KEY (receipt_key) REFERENCES ReceiptDetails(id) ON DELETE CASCADE -- Maintains referential integrity with ReceiptDetails table
+);
+
+CREATE TABLE AuditLogs (
+    log_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each log entry, auto-incremented
+    user_id INT, -- References the Employee who performed the action
+    action ENUM('INSERT', 'UPDATE', 'DELETE', 'SELECT') NOT NULL, -- Type of action performed
+    table_name VARCHAR(255) NOT NULL, -- Name of the table where the action was performed
+    record_id INT NOT NULL, -- ID of the record affected
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the action occurred
+    FOREIGN KEY (user_id) REFERENCES Employees(employee_id) ON DELETE SET NULL -- Maintains referential integrity with Employees table
+);
+CREATE TABLE Payroll (
+    payroll_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each payroll entry, auto-incremented
+    employee_id INT NOT NULL, -- References the employee receiving the payment
+    pay_period_start DATE NOT NULL, -- Start date of the pay period
+    pay_period_end DATE NOT NULL, -- End date of the pay period
+    payment_date DATE NOT NULL, -- Date the payment is issued
+    gross_pay DECIMAL(15, 2) NOT NULL CHECK (gross_pay >= 0), -- Total earnings before deductions, non-negative
+    net_pay DECIMAL(15, 2) NOT NULL CHECK (net_pay >= 0), -- Earnings after deductions, non-negative
+    tax_amount DECIMAL(15, 2) NOT NULL CHECK (tax_amount >= 0), -- Tax amount withheld, non-negative
+    deductions DECIMAL(15, 2) CHECK (deductions >= 0), -- Other deductions, optional but non-negative
+    overtime_pay DECIMAL(15, 2) CHECK (overtime_pay >= 0), -- Payment for overtime hours, optional but non-negative
+    bonus_pay DECIMAL(15, 2) CHECK (bonus_pay >= 0), -- Additional bonuses, optional but non-negative
+    payment_status ENUM('Pending', 'Processed', 'Failed') NOT NULL, -- Status of the payment
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for the last update
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE -- Ensures referential integrity with Employees table
+);
+
+CREATE TABLE Deductions (
+    deduction_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each deduction, auto-incremented
+    employee_id INT NOT NULL, -- References the employee associated with the deduction
+    deduction_type ENUM('Tax', 'Insurance', 'Retirement', 'Other') NOT NULL, -- Type of deduction
+    deduction_description TEXT, -- Description of the deduction, optional
+    deduction_amount DECIMAL(15, 2) NOT NULL CHECK (deduction_amount >= 0), -- Deduction amount, must be non-negative
+    deduction_date DATE NOT NULL, -- Date the deduction is applied
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for the last update
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE -- Maintains referential integrity with Employees table
+);
+
+CREATE TABLE Benefits (
+    benefit_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each benefit, auto-incremented
+    employee_id INT NOT NULL, -- References the employee associated with the benefit
+    benefit_type ENUM('Health Insurance', 'Retirement Plan', 'Paid Time Off', 'Other') NOT NULL, -- Type of benefit
+    benefit_value DECIMAL(15, 2) NOT NULL CHECK (benefit_value >= 0), -- Value of the benefit, must be non-negative
+    start_date DATE NOT NULL, -- Start date of the benefit
+    end_date DATE, -- End date of the benefit, optional
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for the last update
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE -- Maintains referential integrity with Employees table
+);
+
+CREATE TABLE Overtime (
+    overtime_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each overtime entry, auto-incremented
+    employee_id INT NOT NULL, -- References the employee associated with the overtime entry
+    overtime_hours DECIMAL(10, 2) NOT NULL CHECK (overtime_hours >= 0), -- Number of overtime hours, must be non-negative
+    overtime_rate DECIMAL(10, 2) NOT NULL CHECK (overtime_rate >= 0), -- Rate of pay for overtime, must be non-negative
+    overtime_date DATE NOT NULL, -- Date of the overtime work
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for the last update
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE -- Maintains referential integrity with Employees table
+);
+
+CREATE TABLE Attendance (
+    attendance_id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each attendance entry, auto-incremented
+    employee_id INT NOT NULL, -- References the employee associated with the attendance record
+    attendance_date DATE NOT NULL, -- Date of the attendance record
+    clock_in TIME, -- Time the employee clocked in, optional
+    clock_out TIME, -- Time the employee clocked out, optional
+    hours_worked DECIMAL(5, 2) CHECK (hours_worked >= 0), -- Hours worked, must be non-negative
+    attendance_status ENUM('Present', 'Absent', 'On Leave', 'Late', 'Excused') NOT NULL, -- Attendance status
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Timestamp for the last update
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id) ON DELETE CASCADE -- Maintains referential integrity with Employees table
+);
+CREATE TABLE AccountType (
+    id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each account type, auto-incremented
+    account_name VARCHAR(255) UNIQUE NOT NULL, -- Name of the account type, unique and required
+    account_description TEXT, -- Description of the account type, optional
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- Timestamp for the last update
+   
+);
+
+CREATE TABLE AccountSubType (
+    id INT PRIMARY KEY AUTO_INCREMENT, -- Unique identifier for each account subtype, auto-incremented
+    name VARCHAR(255) NOT NULL, -- Name of the account subtype, required
+    account_description TEXT, -- Description of the account subtype, optional
+    account_type_id INT NOT NULL, -- Foreign key linking to AccountType table
+    FOREIGN KEY (account_type_id) REFERENCES AccountType(id) ON DELETE CASCADE, -- Ensures referential integrity with AccountType
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp for when the record is created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- Timestamp for the last update
+   
+);

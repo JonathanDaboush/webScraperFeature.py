@@ -1,0 +1,312 @@
+[2024-10-26 12:05:30.895] [logger] [debug] NetImmerse Override Enabled
+[2024-10-26 12:05:52.835] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for HPGThanosRace from NordRace
+[2024-10-26 12:05:52.835] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for 0AegisRace from NordRace
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleHeadArgonian on ArgonianRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\MaleHeadArgonianChargen.tri - 1219 | Actors\Character\Character Assets\MaleHeadCustomizations.tri - 898).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthArgonian on ArgonianRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthArgonianChargen.tri - 478 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleEyesArgonian on ArgonianRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesArgonianChargen.tri - 50 | Actors\Character\Character Assets\EyesMaleCharGen.tri - 186).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleHeadArgonian on ArgonianRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\FemaleHeadArgonianChargen.tri - 1219 | Actors\Character\Character Assets\FemaleHeadCharGen.tri - 996).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleEyesArgonian on ArgonianRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesArgonianChargen.tri - 50 | Actors\Character\Character Assets\EyesFemaleChargen.tri - 176).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthArgonian on ArgonianRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthArgonianChargen.tri - 478 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleHeadArgonian on ArgonianRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\MaleHeadArgonianChargen.tri - 1219 | Actors\Character\Character Assets\MaleHeadCustomizations.tri - 898).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthArgonian on ArgonianRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthArgonianChargen.tri - 478 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleEyesArgonianVampire on ArgonianRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesArgonianChargen.tri - 50 | Actors\Character\Character Assets\EyesMaleCharGen.tri - 186).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleHeadArgonian on ArgonianRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\FemaleHeadArgonianChargen.tri - 1219 | Actors\Character\Character Assets\FemaleHeadCharGen.tri - 996).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthArgonian on ArgonianRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthArgonianChargen.tri - 478 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.835] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleEyesArgonianVampire on ArgonianRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesArgonianChargen.tri - 50 | Actors\Character\Character Assets\EyesFemaleChargen.tri - 176).
+[2024-10-26 12:05:52.835] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _tw_BretonRace from NordRace
+[2024-10-26 12:05:52.835] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChildVampire[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.835] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChildVampire[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DA13AfflictedRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChildArnima[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.836] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChildArnima[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.836] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChild[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.836] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on BretonRaceChild[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _lull_ChronographerRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for WB_ConjureCraftlord_Race from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_FyrRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _lw_hologram_race from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DwaSpDwemerologist02 from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DwaSpDwemerologist01 from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ccBGSSSE025_DarkSeducerRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DremoraRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for zzDaedraWarrior from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ArnimaDremoraRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BDT_MerchantRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DLC2DremoraRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ROM_DA14_Dremora_Race from NordRace
+[2024-10-26 12:05:52.836] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for _DS_dwemereyes on _DS_DwemerRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesKhajiitChargen.tri - 50 | Actors\Character\Character Assets\EyesMaleCharGen.tri - 186).
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _DS_DwemerRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ACX_Dwemer_Race from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _lull_dwemer from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _lull_yagrum from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for HPGToadRace from NordRace
+[2024-10-26 12:05:52.836] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ccBGSSSE025_GoldenSaintRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_ThalmorMutant_Long from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_ThalmorMutant_BigHead from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _VBM__HighElfRaceLich from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKSeaElfRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKWildElfRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for SnowElfRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_ThalmorMutant_NoHead from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_ThalmorMutant_Armed from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_ThalmorMutant_Masscroft from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_SecariusRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on ImperialRaceChild[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on ImperialRaceChild[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleHeadKhajiit on KhajiitRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\MaleHeadKhajiitChargen.tri - 1356 | Actors\Character\Character Assets\MaleHeadCustomizations.tri - 898).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthKhajiit on KhajiitRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MaleMouthKhajiitChargen.tri - 643 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleEyesKhajiitVampire on KhajiitRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesKhajiitChargen.tri - 50 | Actors\Character\Character Assets\EyesMaleCharGen.tri - 186).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleHeadKhajiit on KhajiitRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\FemaleHeadKhajiitChargen.tri - 1342 | Actors\Character\Character Assets\FemaleHeadCharGen.tri - 996).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthKhajiit on KhajiitRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthKhajiitFemaleChargen.tri - 643 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleEyesKhajiitVampire on KhajiitRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesKhajiitFemaleChargen.tri - 50 | Actors\Character\Character Assets\EyesFemaleChargen.tri - 176).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleHeadKhajiit on KhajiitRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\MaleHeadKhajiitChargen.tri - 1356 | Actors\Character\Character Assets\MaleHeadCustomizations.tri - 898).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthKhajiit on KhajiitRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MaleMouthKhajiitChargen.tri - 643 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleEyesKhajiitBase on KhajiitRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesKhajiitChargen.tri - 50 | Actors\Character\Character Assets\EyesMaleCharGen.tri - 186).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleHeadKhajiit on KhajiitRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\FemaleHeadKhajiitChargen.tri - 1342 | Actors\Character\Character Assets\FemaleHeadCharGen.tri - 996).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthKhajiit on KhajiitRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthKhajiitFemaleChargen.tri - 643 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.837] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleEyesKhajiitBase on KhajiitRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\EyesKhajiitFemaleChargen.tri - 50 | Actors\Character\Character Assets\EyesFemaleChargen.tri - 176).
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for _Lull_MemoryHead (actors\character\rschildrenassets\character assets\childheadchargen.tri) on _Lull_MemoryRace[1] using NordRace. (actors\character\rschildrenassets\character assets\childheadchargen.tri - 996 | Actors\Character\Character Assets\FemaleHeadCharGen.tri - 996)
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for _Lull_MemoryEyes (actors\character\rschildrenassets\character assets\eyeschildchargen.tri) on _Lull_MemoryRace[1] using NordRace. (actors\character\rschildrenassets\character assets\eyeschildchargen.tri - 176 | Actors\Character\Character Assets\EyesFemaleChargen.tri - 176)
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for _Lull_MemoryMouth (actors\character\rschildrenassets\character assets\mouthchildchargen.tri) on _Lull_MemoryRace[1] using NordRace. (actors\character\rschildrenassets\character assets\mouthchildchargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for _Lull_MemoryBrows (actors\character\rschildrenassets\character assets\childheadbrowschargen.tri) on _Lull_MemoryRace[1] using NordRace. (actors\character\rschildrenassets\character assets\childheadbrowschargen.tri - 102 | Actors\Character\Character Assets\FaceParts\FemaleHeadBrowsCharGen.tri - 102)
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_MemoryRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on NordRaceChild[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.837] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on NordRaceChild[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for TestRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DLC1NordRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ManakinRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for DLC2MiraakRace from NordRace
+[2024-10-26 12:05:52.837] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for NordRaceAstrid from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKRedguardElderRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ElderRaceVampire from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKImperialElderRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for ElderRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKReachmanElderRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKBretonElderRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthOrc1 on OrcRace[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthOrcChargen.tri - 348 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.838] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthOrc on OrcRace[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthOrcFemaleChargen.tri - 348 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.838] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for MaleMouthOrc1 on OrcRaceVampire[0] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthOrcChargen.tri - 348 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141).
+[2024-10-26 12:05:52.838] [logger] [error] RacePartDefaultGen::Accept - Could not bind default morphs for FemaleMouthOrc on OrcRaceVampire[1] using NordRace. Vertex mismatch (Actors\Character\Character Assets\Mouth\MouthOrcFemaleChargen.tri - 348 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141).
+[2024-10-26 12:05:52.838] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on RedguardRaceChild[0] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanChargen.tri - 141)
+[2024-10-26 12:05:52.838] [logger] [debug] RacePartDefaultGen::Accept - Binding default morphs for ChildMouth (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri) on RedguardRaceChild[1] using NordRace. (Actors\Character\Character Assets\Mouth\MouthChildChargen.tri - 141 | Actors\Character\Character Assets\Mouth\MouthHumanFChargen.tri - 141)
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for BSKSnowElfRace from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_MajerRace1 from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_MajerRace3 from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_MajerRace5 from NordRace
+[2024-10-26 12:05:52.838] [logger] [debug] RaceMap::CreateDefaultMap - Added default slider maps for _Lull_MajerRace2 from NordRace
+[2024-10-26 12:15:00.758] [logger] [info] Saving...
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:15:00.758] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:15:55.764] [logger] [info] Saving...
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:15:55.764] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:29:52.394] [logger] [info] Saving...
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:29:52.394] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:36:00.675] [logger] [info] Saving...
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:36:00.675] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:36:52.813] [logger] [info] Saving...
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:36:52.813] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:37:22.869] [logger] [info] Saving...
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:37:22.870] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:37:37.891] [logger] [info] Saving...
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:37:37.891] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:46:01.774] [logger] [info] Saving...
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:46:01.774] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:46:20.257] [logger] [info] Saving...
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:46:20.258] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 12:50:59.192] [logger] [info] Saving...
+[2024-10-26 12:50:59.192] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 12:50:59.192] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 12:50:59.193] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 12:50:59.193] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 12:50:59.193] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 12:50:59.193] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 12:50:59.193] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:01:17.290] [logger] [info] Saving...
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:01:17.290] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:08:41.550] [logger] [info] Saving...
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:08:41.550] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:10:35.383] [logger] [info] Saving...
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:10:35.383] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:10:44.115] [logger] [info] Saving...
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:10:44.115] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:12:26.831] [logger] [info] Saving...
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:12:26.831] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:12:36.635] [logger] [info] Saving...
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:12:36.635] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:12:54.566] [logger] [info] Saving...
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:12:54.566] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:16:21.866] [logger] [info] Saving...
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:16:21.866] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:22:06.439] [logger] [info] Saving...
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:22:06.439] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:22:14.423] [logger] [info] Saving...
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:22:14.423] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:22:48.262] [logger] [info] Saving...
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:22:48.262] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:24:57.766] [logger] [info] Saving...
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:24:57.766] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:25:18.871] [logger] [info] Saving...
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:25:18.871] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:26:35.884] [logger] [info] Saving...
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:26:35.884] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:27:18.740] [logger] [info] Saving...
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:27:18.740] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:29:36.817] [logger] [info] Saving...
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:29:36.817] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms
+[2024-10-26 13:31:46.160] [logger] [info] Saving...
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized string table 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Player morph data 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized transforms 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized overlays 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized overrides 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized body morphs 0ms
+[2024-10-26 13:31:46.160] [logger] [debug] SKEE64Serialization_Save - Serialized item data 0ms

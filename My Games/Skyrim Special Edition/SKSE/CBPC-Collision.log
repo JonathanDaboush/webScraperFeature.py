@@ -1,0 +1,26 @@
+Query called
+CBPC Physics SKSE Plugin: 1.6.2
+Attempting Game Hook with old
+Console interface Loaded
+Register Succeeded
+CBPC Load Complete
+Building Event Sinks...
+Loading Configs
+System Config file is loaded successfully.
+Loaded System config
+Master Config file is loaded successfully.
+Loaded MasterConfig
+Loaded Bounce configs
+Bounce interpolation config: test
+Bounce interpolation config loaded: CBPCBounceinterpolationconfig_Test.txt
+Loaded Bounce Interpolation config
+Collision Config file is loaded successfully.
+Loaded Collision config
+Specific collision config files(if any) are loaded successfully.
+Loaded Extra Collision configs
+Collision interpolation config: test
+Collision Interpolation config files(if any) are loaded successfully.
+Loaded Collision Interpolation config
+Player Collision Event Config file is loaded successfully.
+Loaded Player Collision Event config
+Building Event Sinks...

@@ -1,0 +1,37 @@
+[12:05:30:858] po3_Tweaks v1.12.2.1
+[12:05:30:858] Game version : 1-6-1170-0
+[12:05:30:940] *****************POST LOAD PATCH******************
+[12:05:30:940] Settings - Loading [Fixes]
+[12:05:30:940] Settings - Loading [Tweaks]
+[12:05:30:940] Settings - Loading [Experimental]
+[12:05:30:942] 	[FIXES]
+[12:05:30:942] 		Installed distant ref load crash fix
+[12:05:30:942] 		Installed map marker placement fix
+[12:05:30:942] 		Installed 'Can't Be Taken' book flag fix
+[12:05:30:942] 		Installed projectile range fix
+[12:05:30:943] 		Installed combat dialogue fix
+[12:05:30:943] 		Installed IsFurnitureAnimType fix
+[12:05:30:943] 		Installed light attach crash fix
+[12:05:30:943] 		Installed effect shader z buffer fix
+[12:05:30:943] 		Installed toggle collision fix
+[12:05:30:943] 		Installed skinned decal delete fix
+[12:05:30:943] 		Installed jumping bonus fix
+[12:05:30:943] 		Installed toggle global AI fix
+[12:05:30:943] 		Installed use furniture in combat fix
+[12:05:30:943] 		Installed editorID cache
+[12:05:30:943] 		Installed worn restrictions for weapons patch
+[12:05:30:943] 		Installed MagicItemFindKeywordFunctor crash fix
+[12:05:30:943] 	[TWEAKS]
+[12:05:30:943] 	[EXPERIMENTAL]
+[12:05:30:944] ************PLUGIN COMPATIBILITY CHECK************
+[12:05:30:944] Scrambled Bugs : AttachHitEffect patch not enabled or found
+[12:05:30:944] ***************POST POST LOAD PATCH***************
+[12:05:30:944] 	[FIXES]
+[12:05:30:944] 		Installed no death dispel spell reapply fix
+[12:05:43:129] ********************FUNCTIONS*********************
+[12:05:43:130] Registered IsTweakInstalled
+[12:05:52:675] ****************DATA LOADED PATCH*****************
+[12:05:52:675] 	[FIXES]
+[12:05:52:675] 		Installed breathing sound fix
+[12:05:52:675] 		[Screenshot Location Fix] No fixes required (ScreenShot)
+[12:05:52:675] 	[TWEAKS]

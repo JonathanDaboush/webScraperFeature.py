@@ -1,0 +1,124 @@
+[12:05:30:856] po3_SpellPerkItemDistributor v7.1.3.1
+[12:05:30:856] Game version : 1-6-1170-0
+[12:05:30:908] *******************DEPENDENCIES*******************
+[12:05:30:908] powerofthree's Tweaks (po3_tweaks) detected : true
+[12:05:30:908] ***********************INI************************
+[12:05:30:909] 24 matching inis found
+[12:05:30:909] 	INI : Data\AbyssNPC_DISTR.ini
+[12:05:30:910] 	INI : Data\Aero_DISTR.ini
+[12:05:30:912] 	INI : Data\AncientBloodII_DISTR.ini
+[12:05:30:913] 	INI : Data\Apothecary_DISTR.ini
+[12:05:30:915] 	INI : Data\Aqua_DISTR.ini
+[12:05:30:916] 	INI : Data\ArcaneNPC_DISTR.ini
+[12:05:30:918] 	INI : Data\ArclightNPC_DISTR.ini
+[12:05:30:919] 	INI : Data\BloodmoonNPC_DISTR.ini
+[12:05:30:921] 	INI : Data\Bring Meeko to Lod_DISTR.ini
+[12:05:30:922] 	INI : Data\DesecrationNPC_DISTR.ini
+[12:05:30:923] 	INI : Data\DragonsFallDown_DISTR.ini
+[12:05:30:924] 	INI : Data\FlamesOfColdharbourNPC_DISTR.ini
+[12:05:30:926] 	INI : Data\Ghostlight_DISTR.ini
+[12:05:30:927] 	INI : Data\IcebloomNightmare_DISTR.ini
+[12:05:30:928] 	INI : Data\Lightpower_DISTR.ini
+[12:05:30:928] 	INI : Data\LunarisNPC_DISTR.ini
+[12:05:30:929] 	INI : Data\NaturaNPC_DISTR.ini
+[12:05:30:930] 	INI : Data\NecromNPC_DISTR.ini
+[12:05:30:932] 	INI : Data\RoM - Fishing Patch_DISTR.ini
+[12:05:30:933] 	INI : Data\RoM - Saints & Seducers Patch_DISTR.ini
+[12:05:30:934] 	INI : Data\StellarisNPC_DISTR.ini
+[12:05:30:935] 	INI : Data\VulcanoNPC_DISTR.ini
+[12:05:30:937] 	INI : Data\WildwakerMagic_DISTR.ini
+[12:05:30:938] 	INI : Data\worldEater_DISTR.ini
+[12:05:30:940] **********************HOOKS***********************
+[12:05:30:940] Installed actor load hooks
+[12:05:30:944] **********************MERGES**********************
+[12:05:30:944] Failed to dispatch message to MergeMapper
+[12:05:30:944] INFO - MergeMapper not detected
+[12:05:52:369] **********************LOOKUP**********************
+[12:05:52:369] Perk
+[12:05:52:369] Shout
+[12:05:52:369] Item
+[12:05:52:370] 	[Bring Meeko to Lod_DISTR.ini] (nwsIgnoreToken) FAIL - editorID doesn't exist
+[12:05:52:370] ********************PROCESSING********************
+[12:05:52:370] Registered 35/35 Spells
+[12:05:52:370] Registered 35/35 Perks
+[12:05:52:370] Registered 1/1 Shouts
+[12:05:52:370] Lookup took 1224μs / 1ms
+[12:05:52:371] **********************HOOKS***********************
+[12:05:52:371] Installed leveled distribution hooks
+[12:05:52:371] **********************EVENTS**********************
+[12:05:52:372] Registered for struct RE::TESFormDeleteEvent
+[12:05:52:372] Registered class PCLevelMult::Manager
+[12:05:52:372] Registered for struct RE::TESDeathEvent
+[12:05:52:672] **************MAIN MENU DISTRIBUTION**************
+[12:05:52:672] Spell
+[12:05:52:674] 		DLC2crLurkerSpit04 [0x35BF2~Dragonborn.esm] added to 0/5229 NPCs
+[12:05:52:674] 		_AQ_AbyssalImpact [0x813~Aqua.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_AQ_Runeblades [0x814~Aqua.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_AQ_AbyssalInkBolt [0x819~Aqua.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_AQ_ConjureWatcher [0x81B~Aqua.esl] added to 3/5229 NPCs
+[12:05:52:674] 		_AQ_Runemend [0x81C~Aqua.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_AQ_ConjureLurker [0x81D~Aqua.esl] added to 0/5229 NPCs
+[12:05:52:674] 		_AQ_Fatecarver_SPID [0x867~Aqua.esl] added to 0/5229 NPCs
+[12:05:52:674] 		_IP_BorealBreath [0x816~IceBloomNightmare.esl] added to 6/5229 NPCs
+[12:05:52:674] 		_IP_BorealTouch [0x819~IceBloomNightmare.esl] added to 10/5229 NPCs
+[12:05:52:674] 		_IP_SummonSpiritFox [0x81E~IceBloomNightmare.esl] added to 27/5229 NPCs
+[12:05:52:674] 		_BL_PenanceCloakFanIn [0x827~Ghostlight.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_BL_NPC_PenanceRightHand [0x869~Ghostlight.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_BL_NPC_Discharge [0x86A~Ghostlight.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_BL_NPC_OppressiveBarrierLeftHand [0x86B~Ghostlight.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_BL_NPC_GrandCrossRightHand [0x86C~Ghostlight.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_LIP_SunShards [0x824~Lightpower.esl] added to 2/5229 NPCs
+[12:05:52:674] 		_LIP_abAIUseHallowedFlare [0x854~Lightpower.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_PO_NPC_Simmerseed [0x85F~WildwakerMagic.esl] added to 2/5229 NPCs
+[12:05:52:674] 		_PO_NPC_TwilightSickle [0x860~WildwakerMagic.esl] added to 2/5229 NPCs
+[12:05:52:674] 		_PO_NPC_Hailthorns [0x861~WildwakerMagic.esl] added to 2/5229 NPCs
+[12:05:52:674] 		_PO_NPC_FloralBlockade [0x862~WildwakerMagic.esl] added to 49/5229 NPCs
+[12:05:52:674] 		_PO_NPC_NocturnePollen [0x863~WildwakerMagic.esl] added to 4/5229 NPCs
+[12:05:52:674] 		_PO_NPC_StridersShroud [0x864~WildwakerMagic.esl] added to 45/5229 NPCs
+[12:05:52:674] 		_AII_Spell_CascadingTorment [0x83A~AncientBloodII.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_AII_Spell_BloodExtraction [0x89C~AncientBloodII.esl] added to 1/5229 NPCs
+[12:05:52:674] 		_AII_Spell_BloodLeech [0x89D~AncientBloodII.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_AII_Spell_BloodTendrils [0x906~AncientBloodII.esl] added to 0/5229 NPCs
+[12:05:52:674] 		_AV_PLAYER_PoisonNeedles_50 [0x869~Aero.esl] added to 20/5229 NPCs
+[12:05:52:674] 		_AV_PLAYER_WindBallSpawnTornado_75 [0x86F~Aero.esl] added to 31/5229 NPCs
+[12:05:52:674] 		DFD_SPL_DragonsFallDown [0x802~DragonsFallDown.esp] added to 27/5229 NPCs
+[12:05:52:674] 		aaa_AlduinBuff [0x803~World Eater's Influence.esp] added to 3/5229 NPCs
+[12:05:52:674] Perk
+[12:05:52:674] 		AlchemySkillBoosts [0xA725C~Skyrim.esm] added to 5229/5229 NPCs
+[12:05:52:674] 		PerkSkillBoosts [0xCF788~Skyrim.esm] added to 5201/5229 NPCs
+[12:05:52:674] 		MAG_ControllerGeneralPerk [0x1ADA501~Apothecary.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		_AQ_SPIDSpellsBlockerPerk [0x860~Aqua.esl] added to 5/5229 NPCs
+[12:05:52:674] 		_PO_SPIDSpellsBlockerPerk [0x85D~WildwakerMagic.esl] added to 49/5229 NPCs
+[12:05:52:674] 		NAT_OakHeartPerk [0x808~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_AspectoftheViperPerk [0x869~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_AspectoftheFireWyrmPerk [0x9C0~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_AspectoftheFrostWyrmPerk [0x9C1~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_TreeBarkPerk [0x9E3~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_AspectoftheShockWyrmPerk [0xA29~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_AspectoftheBearPerk [0xA2A~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_ControllerPerkPhysicalSpellDamage [0xA52~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:674] 		NAT_EvadePerk [0xBED~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		NAT_PredatorDamagePerk [0xBEE~Natura.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		ABY_ShadowBodyPerk [0x837~Abyss.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS001_ElementalShield_Perk_Fire [0x815~RoM - Fishing Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS001_ElementalShield_Perk_Frost [0x816~RoM - Fishing Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS001_ElementalShield_Perk_Shock [0x817~RoM - Fishing Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS001_TemporalGuard_Perk [0x821~RoM - Fishing Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS001_Prodigy_Perk [0x828~RoM - Fishing Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		ROM_CCBGS025_IgnoreArmor_Perk [0x809~RoM - Saints & Seducers Patch.esp] added to 3506/5229 NPCs
+[12:05:52:675] 		BLO_BloodSiphonPerk [0x837~Bloodmoon.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		BLO_BloodSacrificePerk [0x882~Bloodmoon.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		BLO_BloodMistPerk [0x88E~Bloodmoon.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_NecroticFireBodyPerk [0x9C5~Desecration.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_ArcaneBodyPerk [0x837~Arcane.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_AstralBodyPerk [0x891~Stellaris.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_AstralRestorePerk [0x90D~Stellaris.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_MoltenBodyPerk [0x891~Vulcano.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_EldritchInfectionPerk [0x86C~Necrom.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_BlackTomeEldritchSurge [0x996~Necrom.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		LUN_LunarBodyPerk [0x87D~Lunaris.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_ArclightBodyPerk [0x891~Arclight.esp] added to 5229/5229 NPCs
+[12:05:52:675] 		DAR_ColdFireBodyPerk [0x993~Flames of Coldharbour.esp] added to 5229/5229 NPCs
+[12:05:52:675] Shout
+[12:05:52:675] 		_AV_SPID_SpawnCrossHazardShout [0x8C3~Aero.esl] added to 20/5229 NPCs
+[12:05:52:675] Distribution took 299667μs / 299ms

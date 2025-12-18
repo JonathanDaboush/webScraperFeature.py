@@ -1,0 +1,401 @@
+JContainers64 4.2.9
+plugin loaded
+Registering functions started
+NativeFunction.Ctor object state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithSize state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithInts state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithStrings state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithFloats state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithBooleans state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectWithForms state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor subArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addFromArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addFromFormList state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor asIntArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor asFloatArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor asStringArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor asFormArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor countInteger state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor countFloat state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor countString state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor countObject state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor countForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor count state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor clear state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseIndex state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseRange state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseInteger state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseFloat state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseString state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseObject state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor eraseForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor valueType state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor swapItems state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor sort state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor unique state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor reverse state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToIntegerPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToFloatPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToFormPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToStringPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchAddInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchAddFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchMultInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchMultFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchModInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchDivInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchDivFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchAndInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchXorInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor fetchOrInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor exchangeInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor exchangeFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor exchangeStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor exchangeForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor exchangeObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor compareExchangeInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor compareExchangeFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor compareExchangeStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor compareExchangeForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor compareExchangeObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFltSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveIntSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStrSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObjSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFormSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasPath state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeys state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allValues state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToFile state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor root state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setEntry state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor makeEntry state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor findEntry state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFltSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveIntSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStrSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObjSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFormSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasPath state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeys state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allValues state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor object state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor valueType state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeys state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeysPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allValues state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor removeKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor count state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor clear state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addPairs state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor nextKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getNthKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor object state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor valueType state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeys state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeysPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allValues state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor removeKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor count state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor clear state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addPairs state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor nextKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getNthKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor object state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor setForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor valueType state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeys state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allKeysPArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor allValues state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor removeKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor count state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor clear state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addPairs state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor nextKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor getNthKey state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor wrap state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor enableAPILog state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor retain state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor release state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor releaseAndRetain state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor releaseObjectsWithTag state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor zeroLifetime state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor addToPool state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor cleanPool state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor shallowCopy state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor deepCopy state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor isExists state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor isArray state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor isMap state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor isFormMap state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor isIntegerMap state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor empty state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor count state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor clear state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor readFromFile state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor readFromDirectory state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor objectFromPrototype state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor writeToFile state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solvedValueType state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor hasPath state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveForm state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFltSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveIntSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveStrSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveObjSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor solveFormSetter state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaFlt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaInt state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaStr state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaObj state 00000195384AB3F8 00000195384AB3F8
+NativeFunction.Ctor evalLuaForm state 00000195384AB3F8 00000195384AB3F8
+Registering functions finished in 0.012000 sec
+Save started
+Default domain
+20 objects total
+20 public objects
+2 objects in aqueue
+Save finished in 0.001000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec
+Save started
+Default domain
+18 objects total
+18 public objects
+0 objects in aqueue
+Save finished in 0.000000 sec

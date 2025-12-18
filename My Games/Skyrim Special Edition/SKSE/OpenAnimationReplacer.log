@@ -1,0 +1,7 @@
+[2024-09-03 17:26:33.755] [info] [29652] [main.cpp:125] OpenAnimationReplacer v2-3-6-0
+[2024-09-03 17:26:33.755] [info] [29652] [Settings.cpp:158] Reading .ini...
+[2024-09-03 17:26:33.756] [info] [29652] [Settings.cpp:160] ...success
+[2024-09-03 17:26:33.802] [warning] [29652] [Interfaces.cpp:272] Failed to dispatch message to MergeMapper
+[2024-09-03 17:26:33.802] [info] [29652] [main.cpp:32] MergeMapper not detected
+[2024-09-03 17:26:33.802] [info] [29652] [OpenAnimationReplacer.cpp:782] Initializing condition factories...
+[2024-09-03 17:26:33.802] [info] [29652] [OpenAnimationReplacer.cpp:933] Condition factories initialized.

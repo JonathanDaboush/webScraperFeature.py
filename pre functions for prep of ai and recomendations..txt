@@ -1,0 +1,573 @@
+# =============================
+# FILE: requirements.txt
+# =============================
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+sentence-transformers>=2.2
+openpyxl>=3.1
+python-docx>=1.1
+python-pptx>=0.6.21
+reportlab>=4.0
+matplotlib>=3.8
+
+# =============================
+# FILE: generate_dataset.py
+# =============================
+"""
+Generate a bundle of complex, mixed-format files (xlsx, pptx, pdf, docx, txt, csv)
+that are intentionally created with varying degrees of relevance to a user query.
+
+Adds sidecar META files with tokenized+embedded summaries to save space.
+
+Usage examples:
+
+python generate_dataset.py \
+  --query "freelance tax deductions in Canada" \
+  --out_dir ./out \
+  --total 18 \
+  --file_types xlsx pptx pdf docx txt csv \
+  --pct_high 0.5 \
+  --complexity 3 \
+  --seed 42
+
+Notes
+-----
+- "Learner" = a lightweight TF-IDF semantic model trained on seed topics. It
+  steers content so each file lands near a target relevance score.
+- Complexity increases sections/sheets/figures, formulas, charts, tables, etc.
+- A manifest.json is written summarizing each file’s relevance and topics.
+- Each output also writes a .meta.json with tokens + (quantized) embedding.
+"""
+from __future__ import annotations
+import argparse
+import json
+import os
+from pathlib import Path
+import random
+from typing import List, Dict
+
+from generator.content_learner import ContentLearner
+from generator.file_writers.excel_writer import write_excel
+from generator.file_writers.pptx_writer import write_pptx
+from generator.file_writers.pdf_writer import write_pdf
+from generator.file_writers.docx_writer import write_docx
+from generator.file_writers.txt_writer import write_txt
+from generator.file_writers.csv_writer import write_csv
+from generator.embeddings import SpaceSaver
+
+SUPPORTED = ["xlsx", "pptx", "pdf", "docx", "txt", "csv"]
+
+
+def parse_args():
+    p = argparse.ArgumentParser(description="Generate complex multi-format files with controlled relevance")
+    p.add_argument("--query", required=True, help="User query that guides topical relevance")
+    p.add_argument("--out_dir", default="./out", help="Output directory")
+    p.add_argument("--total", type=int, default=12, help="Total number of files to create (hard limit)")
+    p.add_argument("--file_types", nargs="*", default=["xlsx", "pptx", "pdf", "docx", "txt", "csv"],
+                   help=f"Subset of: {SUPPORTED}")
+    p.add_argument("--pct_high", type=float, default=0.5, help="Fraction ~high-relevance files (0..1)")
+    p.add_argument("--complexity", type=int, default=2, help="1..4 increases structure (sheets/slides/figures)")
+    p.add_argument("--seed", type=int, default=123, help="Random seed for reproducibility")
+    p.add_argument("--max_tokens", type=int, default=2048, help="Token cap for sidecar storage")
+    return p.parse_args()
+
+
+def allocate_counts(total:int, types:List[str]) -> Dict[str,int]:
+    counts = {t: 0 for t in types}
+    i = 0
+    while sum(counts.values()) < total:
+        counts[types[i % len(types)]] += 1
+        i += 1
+    return counts
+
+
+def main():
+    args = parse_args()
+    random.seed(args.seed)
+    os.makedirs(args.out_dir, exist_ok=True)
+
+    types = [t for t in args.file_types if t in SUPPORTED]
+    if not types:
+        raise SystemExit(f"No valid file types. Choose from {SUPPORTED}")
+
+    counts = allocate_counts(args.total, types)
+
+    learner = ContentLearner(seed=args.seed)
+    learner.fit_seed_corpus()  # build TF-IDF from built-in topics
+
+    saver = SpaceSaver(model_name="sentence-transformers/all-MiniLM-L6-v2", seed=args.seed)
+
+    manifest = {
+        "query": args.query,
+        "seed": args.seed,
+        "complexity": args.complexity,
+        "files": []
+    }
+
+    # Draw target relevances: half high (0.65-0.95), half low (0.05-0.35) by pct
+    n_high = round(args.total * args.pct_high)
+    targets = [random.uniform(0.65,0.95) for _ in range(n_high)] + \
+              [random.uniform(0.05,0.35) for _ in range(args.total - n_high)]
+    random.shuffle(targets)
+
+    writers = {
+        "xlsx": write_excel,
+        "pptx": write_pptx,
+        "pdf":  write_pdf,
+        "docx": write_docx,
+        "txt":  write_txt,
+        "csv":  write_csv,
+    }
+
+    idx = 0
+    for ftype, n in counts.items():
+        for _ in range(n):
+            target_rel = targets[idx]
+            idx += 1
+            # Synthesize a content pack guided by target relevance
+            content = learner.make_content_pack(
+                query=args.query,
+                target_relevance=target_rel,
+                complexity=args.complexity
+            )
+            # Write chosen format
+            outfile = Path(args.out_dir)/f"sample_{ftype}_{idx}.{ftype}"
+            writers[ftype](outfile, content, args.complexity)
+
+            # Sidecar: tokenized + embedded summary to save space
+            text_blob = "
+
+".join(content["paragraphs"]) + "
+
+" + "
+".join(",".join(r) for r in content["table"][:8])
+            meta = saver.sidecar(text_blob, max_tokens=args.max_tokens)
+            sidecar = outfile.with_suffix(outfile.suffix + ".meta.json")
+            with open(sidecar, "w", encoding="utf-8") as f:
+                json.dump(meta, f, indent=2)
+
+            manifest["files"].append({
+                "path": str(outfile),
+                "format": ftype,
+                "target_relevance": round(target_rel,3),
+                "estimated_relevance": round(content["meta"]["estimated_relevance"],3),
+                "top_terms": content["meta"]["top_terms"][:8],
+                "sidecar": str(sidecar)
+            })
+
+    with open(Path(args.out_dir)/"manifest.json", "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2)
+
+    print(f"Wrote {len(manifest['files'])} files to {args.out_dir}")
+    print("Manifest:", Path(args.out_dir)/"manifest.json")
+
+
+if __name__ == "__main__":
+    main()
+
+# =============================
+# FILE: generator/embedding_learner.py
+# =============================
+from sentence_transformers import SentenceTransformer
+
+class EmbeddingLearner:
+    def __init__(self, model_name="all-MiniLM-L6-v2"):
+        self.model = SentenceTransformer(model_name)
+    def embed(self,texts):
+        return self.model.encode(texts,normalize_embeddings=True)
+
+# =============================
+# FILE: generator/semantic_matcher.py
+# =============================
+from sklearn.metrics.pairwise import cosine_similarity
+
+class SemanticMatcher:
+    def __init__(self, embedder):
+        self.embedder=embedder
+    def estimate_semantic_relevance(self, query:str, doc:str)->float:
+        qv=self.embedder.embed([query])
+        dv=self.embedder.embed([doc])
+        return float(cosine_similarity([qv[0]],[dv[0]])[0][0])
+
+# =============================
+# FILE: generator/recommender.py
+# =============================
+import random
+
+class RecommendationEngine:
+    def __init__(self):
+        pass
+    def suggest_queries(self, user_history, permissions, files):
+        # very naive: if user has write access, suggest content editing; else suggest viewing.
+        suggestions=[]
+        for f in files:
+            if permissions.get(f["path"],"read")=="write":
+                suggestions.append({"file":f["path"],"suggestion":"Consider editing or appending insights"})
+            else:
+                suggestions.append({"file":f["path"],"suggestion":"Review this document for background"})
+        # also reuse past terms
+        if user_history:
+            past=random.choice(user_history)
+            suggestions.append({"file":None,"suggestion":f"Explore related to past query: {past}"})
+        return suggestions
+
+# =============================
+# FILE: generator/embeddings.py
+# =============================
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import List, Dict, Optional
+import re
+import numpy as np
+
+try:
+    from sentence_transformers import SentenceTransformer
+    _HAS_ST = True
+except Exception:
+    _HAS_ST = False
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+_TOKEN_RE = re.compile(r"[A-Za-z0-9%$\-]+")
+
+
+def simple_tokenize(text: str) -> List[str]:
+    return _TOKEN_RE.findall(text.lower())
+
+
+def _quantize_to_uint8(vec: np.ndarray) -> Dict:
+    v = vec.astype(np.float32)
+    vmin = float(v.min())
+    vmax = float(v.max())
+    scale = (vmax - vmin) if vmax > vmin else 1.0
+    q = np.clip(((v - vmin) / scale) * 255.0, 0, 255).astype(np.uint8)
+    return {"q": q.tolist(), "vmin": vmin, "scale": float(scale)}
+
+
+class EmbeddingBackend:
+    """Hybrid embedding backend: ST if available, else TF-IDF."""
+    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+        self.model_name = model_name
+        self.model = None
+        self.vectorizer: Optional[TfidfVectorizer] = None
+        if _HAS_ST:
+            try:
+                self.model = SentenceTransformer(model_name)
+            except Exception:
+                self.model = None
+
+    def fit_if_needed(self, texts: List[str]):
+        if self.model is None:
+            # Build TF-IDF space over provided texts
+            self.vectorizer = TfidfVectorizer(tokenizer=simple_tokenize, ngram_range=(1,2), min_df=1)
+            self.vectorizer.fit(texts)
+
+    def encode(self, texts: List[str]) -> np.ndarray:
+        if self.model is not None:
+            embs = self.model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
+            return np.asarray(embs, dtype=np.float32)
+        if self.vectorizer is None:
+            self.fit_if_needed(texts)
+        X = self.vectorizer.transform(texts)
+        # L2 normalize
+        arr = X.toarray().astype(np.float32)
+        norms = np.linalg.norm(arr, axis=1, keepdims=True) + 1e-9
+        return arr / norms
+
+
+@dataclass
+class SpaceSaver:
+    model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
+    seed: int = 123
+
+    def __post_init__(self):
+        self.backend = EmbeddingBackend(self.model_name)
+
+    def compress_tokens(self, text: str, max_tokens: int = 2048) -> List[str]:
+        toks = simple_tokenize(text)
+        if len(toks) <= max_tokens:
+            return toks
+        # Rank tokens by TF-IDF (fallback to frequency if needed)
+        tfidf = TfidfVectorizer(tokenizer=lambda x: x.split(), lowercase=False)
+        joined = " ".join(toks)
+        X = tfidf.fit_transform([joined])
+        scores = X.toarray()[0]
+        feats = tfidf.get_feature_names_out()
+        pairs = list(zip(feats, scores))
+        pairs.sort(key=lambda x: x[1], reverse=True)
+        top = [w for w,_ in pairs[:max_tokens]]
+        return top
+
+    def sidecar(self, text: str, max_tokens: int = 2048) -> Dict:
+        tokens = self.compress_tokens(text, max_tokens=max_tokens)
+        # Embedding over joined tokens (saves space vs full text)
+        joined = " ".join(tokens)
+        self.backend.fit_if_needed([joined])
+        emb = self.backend.encode([joined])[0]
+        q = _quantize_to_uint8(emb)
+        return {
+            "tokens": tokens,
+            "embedding_uint8": q,
+            "embedding_dim": int(len(emb)),
+            "backend": "SentenceTransformers" if _HAS_ST and self.backend.model is not None else "TF-IDF",
+        }
+
+# =============================
+# FILE: ml/relevance_model.py
+# =============================
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import List, Dict
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from generator.embeddings import EmbeddingBackend, simple_tokenize
+
+
+def _chunk(text: str, max_tokens: int = 350):
+    toks = simple_tokenize(text)
+    for i in range(0, len(toks), max_tokens):
+        yield " ".join(toks[i:i+max_tokens])
+
+
+@dataclass
+class RelevanceAnalyzer:
+    model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
+
+    def __post_init__(self):
+        self.backend = EmbeddingBackend(self.model_name)
+        self.lex = TfidfVectorizer(tokenizer=simple_tokenize, ngram_range=(1,2))
+
+    def score(self, query: str, full_text: str, explain_k: int = 5) -> Dict:
+        # Chunk large docs to keep memory bounded
+        chunks = list(_chunk(full_text, max_tokens=400)) or [full_text]
+        texts = [query] + chunks
+        self.backend.fit_if_needed(texts)
+        embs = self.backend.encode(texts)
+        qv = embs[0:1]
+        dv = embs[1:]
+        # cosine (normalized) and dot hybrids
+        cos = (dv @ qv.T).ravel()
+        dot = (dv * qv).sum(axis=1)
+        # normalized dot
+        dot_n = (dot - dot.min())/(dot.max()-dot.min()+1e-8)
+        scores = 0.7*cos + 0.3*dot_n
+        best_i = int(np.argmax(scores))
+        best_score = float(scores[best_i])
+
+        # Lexical explanation on best chunk
+        top_terms = []
+        try:
+            X = self.lex.fit_transform([query, chunks[best_i]])
+            qv_l = X[0].toarray()[0]
+            dv_l = X[1].toarray()[0]
+            feats = self.lex.get_feature_names_out()
+            overlap = qv_l * dv_l
+            top_idx = np.argsort(overlap)[::-1][:explain_k]
+            top_terms = [feats[i] for i in top_idx if overlap[i] > 0][:explain_k]
+        except Exception:
+            pass
+
+        return {
+            "overall_score": round(float(np.mean(scores)), 4),
+            "max_chunk_score": round(best_score, 4),
+            "best_chunk_index": best_i,
+            "chunk_scores": [round(float(s),4) for s in scores.tolist()],
+            "top_terms": top_terms,
+            "explanation": f"Best of {len(chunks)} chunks scored {best_score:.3f}; key terms: {', '.join(top_terms) if top_terms else 'n/a'}."
+        }
+
+# =============================
+# FILE: ml/suggester.py
+# =============================
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import List, Dict
+import os
+import numpy as np
+from generator.embeddings import EmbeddingBackend
+
+
+@dataclass
+class User:
+    user_id: str
+    groups: List[str]
+
+
+def _perm_level(perms: Dict[str,str], user: User) -> int:
+    # simple policy: 0=no access, 1=read, 2=write
+    if perms.get(f"user:{user.user_id}") == "write":
+        return 2
+    if perms.get(f"user:{user.user_id}") == "read":
+        return 1
+    for g in user.groups:
+        lvl = perms.get(f"group:{g}")
+        if lvl == "write":
+            return 2
+        if lvl == "read":
+            return 1
+    if perms.get("public") == "read":
+        return 1
+    return 0
+
+
+def _action_suggestions(path: str) -> List[str]:
+    ext = os.path.splitext(path)[1].lower()
+    if ext in [".xlsx", ".csv"]:
+        return ["pivot_kpis", "chart_trends", "reconcile_rows", "detect_outliers"]
+    if ext in [".docx", ".txt"]:
+        return ["summarize", "extract_headings", "find_entities", "rewrite_clarity"]
+    if ext in [".pptx"]:
+        return ["summarize_slides", "export_notes", "merge_from_doc"]
+    if ext in [".pdf"]:
+        return ["extract_tables", "ocr_if_needed", "summarize"]
+    return ["open"]
+
+
+class SuggestionEngine:
+    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+        self.backend = EmbeddingBackend(model_name)
+
+    def suggest(self, query: str, docs: List[Dict], user: User, history: Dict, top_k: int = 8) -> Dict:
+        # docs: [{path, summary, perms:{}, tags:[], embedding(optional)}]
+        # history: {"queries": [..], "interactions": [{"path":..., "action":..., "count":...}]}
+        self.backend.fit_if_needed([query] + [d.get("summary", "") for d in docs])
+        qv = self.backend.encode([query])[0]
+
+        # quick user affinity from history
+        past_q = history.get("queries", [])[-20:]
+        H = self.backend.encode(past_q) if past_q else np.zeros((1, len(qv)))
+        hvec = H.mean(axis=0) if len(past_q) else np.zeros_like(qv)
+
+        recs = []
+        for d in docs:
+            lvl = _perm_level(d.get("perms", {}), user)
+            if lvl <= 0:
+                continue
+            dv = d.get("embedding")
+            if dv is None:
+                txt = (d.get("summary") or "") + " " + " ".join(d.get("tags", []))
+                dv = self.backend.encode([txt])[0]
+            cos_q = float(np.dot(qv, dv))
+            cos_h = float(np.dot(hvec, dv)) if past_q else 0.0
+            perm_w = 1.0 if lvl == 2 else 0.8
+            score = 0.65*cos_q + 0.25*cos_h + 0.10*perm_w
+            recs.append({
+                "path": d.get("path"),
+                "score": round(score, 4),
+                "actions": _action_suggestions(d.get("path","")),
+                "permission": "write" if lvl==2 else "read"
+            })
+
+        recs.sort(key=lambda x: x["score"], reverse=True)
+        return {"recommendations": recs[:top_k]}
+
+# =============================
+# FILE: utils/text_loader.py
+# =============================
+from __future__ import annotations
+from typing import List
+import os
+
+
+def load_text(path: str) -> str:
+    ext = os.path.splitext(path)[1].lower()
+    if ext in [".txt", ".csv"]:
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            return f.read()
+    if ext == ".docx":
+        from docx import Document
+        doc = Document(path)
+        return "
+".join(p.text for p in doc.paragraphs)
+    if ext == ".pptx":
+        from pptx import Presentation
+        prs = Presentation(path)
+        out = []
+        for slide in prs.slides:
+            for shape in slide.shapes:
+                if hasattr(shape, "text"):
+                    out.append(shape.text)
+        return "
+".join(out)
+    if ext == ".xlsx":
+        import pandas as pd
+        xl = pd.ExcelFile(path)
+        chunks: List[str] = []
+        for sheet in xl.sheet_names:
+            df = xl.parse(sheet)
+            chunks.append(df.to_csv(index=False))
+        return "
+".join(chunks)
+    if ext == ".pdf":
+        import pdfplumber
+        out = []
+        with pdfplumber.open(path) as pdf:
+            for page in pdf.pages:
+                out.append(page.extract_text() or "")
+        return "
+".join(out)
+    # fallback
+    try:
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            return f.read()
+    except Exception:
+        return ""
+
+# =============================
+# FILE: analyze_relevance.py
+# =============================
+from __future__ import annotations
+import argparse
+from utils.text_loader import load_text
+from ml.relevance_model import RelevanceAnalyzer
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--query", required=True)
+    ap.add_argument("--path", required=True, help="Path to a large document (any supported type)")
+    ap.add_argument("--model", default="sentence-transformers/all-MiniLM-L6-v2")
+    args = ap.parse_args()
+
+    txt = load_text(args.path)
+    if not txt:
+        raise SystemExit("Could not read any text from file.")
+
+    ana = RelevanceAnalyzer(model_name=args.model)
+    result = ana.score(args.query, txt)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+
+# =============================
+# FILE: suggest_commands.py
+# =============================
+from __future__ import annotations
+import argparse
+import json
+from ml.suggester import SuggestionEngine, User
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--query", required=True)
+    ap.add_argument("--docs", required=True, help="JSON file: list of doc dicts with path, summary, perms, tags")
+    ap.add_argument("--history", required=True, help="JSON file: user history with queries/interactions")
+    ap.add_argument("--user", required=True, help="user id")
+    ap.add_argument("--groups", nargs="*", default=[])
+    args = ap.parse_args()
+
+    with open(args.docs, "r", encoding="utf-8") as f:
+        docs = json.load(f)
+    with open(args.history, "r", encoding="utf-8") as f:
+        history = json.load(f)
+
+    eng = SuggestionEngine()
+    user = User(user_id=args.user, groups=args.groups)
+    out = eng.suggest(args.query, docs, user, history)
+    print(json.dumps(out, indent=2))
+
+if __name__ == "__main__":
+    main()

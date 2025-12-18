@@ -1,0 +1,1067 @@
+SexLabUtil
+Loaded database for SkyrimSE.exe version 1.6.1170.0.
+Initializing Plugin
+Registering Functions
+---
+Serialization: Revert
+Reverting: CRTP - Creature Types
+Reverting: STAT - Actor Stats
+Revert Done!
+---
+---
+Serialization: Load
+Loading: MODS - Mod List
+	Length: 3665
+	(0 -> 0)	Skyrim.esm
+	(1 -> 1)	Update.esm
+	(2 -> 2)	Dawnguard.esm
+	(3 -> 3)	HearthFires.esm
+	(4 -> 4)	Dragonborn.esm
+	(5 -> 5)	ccBGSSSE001-Fish.esm
+	(6 -> 6)	ccBGSSSE025-AdvDSGS.esm
+	(7 -> 7)	unofficial skyrim special edition patch.esp
+	(8 -> 8)	LegacyoftheDragonborn.esm
+	(9 -> 9)	RealisticWaterTwo - Resources.esm
+	(10 -> 10)	arnima.esm
+	(11 -> 11)	BSAssets.esm
+	(12 -> 12)	BSHeartland.esm
+	(13 -> 13)	BS_DLC_patch.esp
+	(14 -> 14)	Falskaar.esm
+	(15 -> 15)	WheelsOfLull.esp
+	(16 -> 16)	MzarkWonders.esp
+	(17 -> 17)	SexLab.esm
+	(18 -> 18)	SkyUI_SE.esp
+	(19 -> 19)	dD - Enhanced Blood Main LITE.esp
+	(20 -> 20)	Relationship Dialogue Overhaul.esp
+	(21 -> 21)	AmazingFollowerTweaks.esp
+	(22 -> 22)	SRC - All In One.esp
+	(23 -> 23)	iNeed.esp
+	(24 -> 24)	iNeed - Extended.esp
+	(25 -> 25)	The Great Cities - Minor Cities and Towns.esp
+	(26 -> 26)	JKs Skyrim.esp
+	(27 -> 27)	COTN - Falkreath.esp
+	(28 -> 28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29 -> 29)	Resources - The Great Cities.esp
+	(30 -> 30)	The Great City of Winterhold v4.esp
+	(31 -> 31)	COTN - Winterhold.esp
+	(32 -> 32)	The Great Cities of JK's North - Patch.esp
+	(33 -> 33)	DealingwithDaedra.esp
+	(34 -> 34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35 -> 35)	Civil War Aftermath.esp
+	(36 -> 36)	Aetherius Magic 2.0.esp
+	(37 -> 37)	DBDawnstar Sanctuary SSE.esp
+	(38 -> 38)	goodbrother.esp
+	(39 -> 39)	SeranaDialogAddon.esp
+	(40 -> 40)	OpulentThievesGuild.esp
+	(41 -> 41)	Apothecary.esp
+	(42 -> 42)	Reliquary of Myth.esp
+	(43 -> 43)	Odin - Skyrim Magic Overhaul.esp
+	(44 -> 44)	Thunderchild - Epic Shout Package.esp
+	(45 -> 45)	RF_Pinevale.esp
+	(46 -> 46)	Civil War Commanders.esp
+	(47 -> 47)	TrainAndStudy.esp
+	(48 -> 48)	Wintersun - Faiths of Skyrim.esp
+	(49 -> 49)	Lit Road Signs.esp
+	(50 -> 50)	SkyrimSewers.esp
+	(51 -> 51)	SurSummerAssault - Stormcloak.esp
+	(52 -> 52)	HearthfireMultiKid.esp
+	(53 -> 53)	BrhuceLegacy.esp
+	(54 -> 54)	SexLab-AmorousAdventures.esp
+	(55 -> 55)	Soul Cairn Expanded.esp
+	(56 -> 56)	BetterDeadThralls.esp
+	(57 -> 57)	middenexpandedSSE.esp
+	(58 -> 58)	Cursed.esp
+	(59 -> 59)	Glamoril.esp
+	(60 -> 60)	Thalmor Forts Invasion.esp
+	(61 -> 61)	Civil War Healers.esp
+	(62 -> 62)	DarkEnvoy.esp
+	(63 -> 63)	notice board.esp
+	(64 -> 64)	SkyrimReputation_SSE.esp
+	(65 -> 65)	blackreachrailroadnew.esp
+	(66 -> 66)	lullfish.esp
+	(67 -> 67)	Sneak Tools.esp
+	(68 -> 68)	Better Vampire Weapons.esp
+	(69 -> 69)	Civil War Extended.esp
+	(70 -> 70)	the paarthurnax dilemma.esp
+	(71 -> 71)	Dwemertech - Magic of the Dwarves.esp
+	(72 -> 72)	No Stagger While Casting Master Spells.esp
+	(73 -> 73)	Champion of Hermaeus Mora.esp
+	(74 -> 74)	Lair of Succubi.esp
+	(75 -> 75)	Extended Character Creation Options.esp
+	(76 -> 76)	DwemerSpectresLegendary.esp
+	(77 -> 77)	StonehallOrphanage.esp
+	(78 -> 78)	Aethernautics.esp
+	(79 -> 79)	DOA5.esp
+	(80 -> 80)	Apocalypse - Magic of Skyrim.esp
+	(81 -> 81)	Summermyst - Enchantments of Skyrim.esp
+	(82 -> 82)	Serana Re-Imagined.esp
+	(83 -> 83)	Sleep Spells.esp
+	(84 -> 84)	Jinxxed Followers - One Piece Girls.esp
+	(85 -> 85)	Jinxxed Followers - Boa Hancock.esp
+	(86 -> 86)	RaceMenu.esp
+	(87 -> 87)	RaceMenuPlugin.esp
+	(88 -> 88)	RaceMenuMorphsCBBE.esp
+	(89 -> 89)	TheEyesOfBeauty.esp
+	(90 -> 90)	KS Wigs.esp
+	(91 -> 91)	BooksBooksBooks.esp
+	(92 -> 92)	Volkihar Knight.esp
+	(93 -> 93)	KvSweets.esp
+	(94 -> 94)	arvak_replace.esp
+	(95 -> 95)	Useful Elder Scrolls.esp
+	(96 -> 96)	Sneak Tools Vanilla Hoods.esp
+	(97 -> 97)	Sneak Tools Vanilla Masks.esp
+	(98 -> 98)	FNIS.esp
+	(99 -> 99)	PerkPoints.esp
+	(100 -> 100)	healthregen.esp
+	(101 -> 101)	XPMSE.esp
+	(102 -> 102)	SimpleXPBuff - Extreme.esp
+	(103 -> 103)	spell_amnesia_SSE.esp
+	(104 -> 104)	SkyrimReputation_SSE_Wintersun.esp
+	(105 -> 105)	edit_LearnEffects.esp
+	(106 -> 106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107 -> 107)	olorosodahviing.esp
+	(108 -> 108)	NoBSAIProjectileDodge.esp
+	(109 -> 109)	PositiveUndressedReactions.esp
+	(110 -> 110)	RDO - AFT v1.66 Patch.esp
+	(111 -> 111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112 -> 112)	ImmersiveBendWill.esp
+	(113 -> 113)	MerchantsInstantlyRestockSSE.esp
+	(114 -> 114)	HearthfireMultiKid_LastName.esp
+	(115 -> 115)	Rings2Hands.esp
+	(116 -> 116)	Items of Power.esp
+	(117 -> 117)	PassTheTime.esp
+	(118 -> 118)	AbsorbSoulOnDeath.esp
+	(119 -> 119)	AllThievesGuildJobsConcurrently.esp
+	(120 -> 120)	Companions Radiant Quests Requirement.esp
+	(121 -> 121)	DHSpell.esp
+	(122 -> 122)	Advanced Alteration - Telekinetics.esp
+	(123 -> 123)	RealTelekinesis.esp
+	(124 -> 124)	LWPlayerHeadTracking.esp
+	(125 -> 125)	marrymeserana.esp
+	(126 -> 126)	adenz_MarieRose.esp
+	(127 -> 127)	Immersive Citizens - AI Overhaul.esp
+	(128 -> 128)	The Brotherhood of Old.esp
+	(129 -> 129)	Imperious - Races of Skyrim.esp
+	(130 -> 130)	ECCO - Imperious Patch.esp
+	(131 -> 131)	Ordinator - Perks of Skyrim.esp
+	(132 -> 132)	TCBM.esp
+	(133 -> 133)	Odin - Ordinator Compatibility Patch.esp
+	(134 -> 134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135 -> 135)	Sacrosanct - Vampires of Skyrim.esp
+	(136 -> 136)	Better Vampires.esp
+	(137 -> 137)	Add Sacrosanct Spells to BV.esp
+	(138 -> 138)	alternate start - live another life.esp
+	(139 -> 139)	RealisticWaterTwo.esp
+	(140 -> 140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141 -> 141)	RealisticWaterTwo - Waves - Falskaar.esp
+Loading: CRTP - Creature Types
+	Length: 2846
+Loading: STAT - Actor Stats
+	Length: 50
+Load Done!
+---
+Papyrus Loading File: ../SexLab/AnimationProfile_1.json
+	File does not exists: Data/SKSE/Plugins/SexLab/../SexLab/AnimationProfile_1.json
+JSON: Failed to parse file, init empty root object...
+
+
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---
+---
+Serialization: Save
+Saving: MODS - Mod List
+Saving mod list:
+	(0)	Skyrim.esm
+	(1)	Update.esm
+	(2)	Dawnguard.esm
+	(3)	HearthFires.esm
+	(4)	Dragonborn.esm
+	(5)	ccBGSSSE001-Fish.esm
+	(6)	ccBGSSSE025-AdvDSGS.esm
+	(7)	unofficial skyrim special edition patch.esp
+	(8)	LegacyoftheDragonborn.esm
+	(9)	RealisticWaterTwo - Resources.esm
+	(10)	arnima.esm
+	(11)	BSAssets.esm
+	(12)	BSHeartland.esm
+	(13)	BS_DLC_patch.esp
+	(14)	Falskaar.esm
+	(15)	WheelsOfLull.esp
+	(16)	MzarkWonders.esp
+	(17)	SexLab.esm
+	(18)	SkyUI_SE.esp
+	(19)	dD - Enhanced Blood Main LITE.esp
+	(20)	Relationship Dialogue Overhaul.esp
+	(21)	AmazingFollowerTweaks.esp
+	(22)	SRC - All In One.esp
+	(23)	iNeed.esp
+	(24)	iNeed - Extended.esp
+	(25)	The Great Cities - Minor Cities and Towns.esp
+	(26)	JKs Skyrim.esp
+	(27)	COTN - Falkreath.esp
+	(28)	OCW_Obscure's_CollegeofWinterhold.esp
+	(29)	Resources - The Great Cities.esp
+	(30)	The Great City of Winterhold v4.esp
+	(31)	COTN - Winterhold.esp
+	(32)	The Great Cities of JK's North - Patch.esp
+	(33)	DealingwithDaedra.esp
+	(34)	Skyrim Revamped - Complete Enemy Overhaul.esp
+	(35)	Civil War Aftermath.esp
+	(36)	Aetherius Magic 2.0.esp
+	(37)	DBDawnstar Sanctuary SSE.esp
+	(38)	goodbrother.esp
+	(39)	SeranaDialogAddon.esp
+	(40)	OpulentThievesGuild.esp
+	(41)	Apothecary.esp
+	(42)	Reliquary of Myth.esp
+	(43)	Odin - Skyrim Magic Overhaul.esp
+	(44)	Thunderchild - Epic Shout Package.esp
+	(45)	RF_Pinevale.esp
+	(46)	Civil War Commanders.esp
+	(47)	TrainAndStudy.esp
+	(48)	Wintersun - Faiths of Skyrim.esp
+	(49)	Lit Road Signs.esp
+	(50)	SkyrimSewers.esp
+	(51)	SurSummerAssault - Stormcloak.esp
+	(52)	HearthfireMultiKid.esp
+	(53)	BrhuceLegacy.esp
+	(54)	SexLab-AmorousAdventures.esp
+	(55)	Soul Cairn Expanded.esp
+	(56)	BetterDeadThralls.esp
+	(57)	middenexpandedSSE.esp
+	(58)	Cursed.esp
+	(59)	Glamoril.esp
+	(60)	Thalmor Forts Invasion.esp
+	(61)	Civil War Healers.esp
+	(62)	DarkEnvoy.esp
+	(63)	notice board.esp
+	(64)	SkyrimReputation_SSE.esp
+	(65)	blackreachrailroadnew.esp
+	(66)	lullfish.esp
+	(67)	Sneak Tools.esp
+	(68)	Better Vampire Weapons.esp
+	(69)	Civil War Extended.esp
+	(70)	the paarthurnax dilemma.esp
+	(71)	Dwemertech - Magic of the Dwarves.esp
+	(72)	No Stagger While Casting Master Spells.esp
+	(73)	Champion of Hermaeus Mora.esp
+	(74)	Lair of Succubi.esp
+	(75)	Extended Character Creation Options.esp
+	(76)	DwemerSpectresLegendary.esp
+	(77)	StonehallOrphanage.esp
+	(78)	Aethernautics.esp
+	(79)	DOA5.esp
+	(80)	Apocalypse - Magic of Skyrim.esp
+	(81)	Summermyst - Enchantments of Skyrim.esp
+	(82)	Serana Re-Imagined.esp
+	(83)	Sleep Spells.esp
+	(84)	Jinxxed Followers - One Piece Girls.esp
+	(85)	Jinxxed Followers - Boa Hancock.esp
+	(86)	RaceMenu.esp
+	(87)	RaceMenuPlugin.esp
+	(88)	RaceMenuMorphsCBBE.esp
+	(89)	TheEyesOfBeauty.esp
+	(90)	KS Wigs.esp
+	(91)	BooksBooksBooks.esp
+	(92)	Volkihar Knight.esp
+	(93)	KvSweets.esp
+	(94)	arvak_replace.esp
+	(95)	Useful Elder Scrolls.esp
+	(96)	Sneak Tools Vanilla Hoods.esp
+	(97)	Sneak Tools Vanilla Masks.esp
+	(98)	FNIS.esp
+	(99)	PerkPoints.esp
+	(100)	healthregen.esp
+	(101)	XPMSE.esp
+	(102)	SimpleXPBuff - Extreme.esp
+	(103)	spell_amnesia_SSE.esp
+	(104)	SkyrimReputation_SSE_Wintersun.esp
+	(105)	edit_LearnEffects.esp
+	(106)	Ultimate Dragon Allies - Odahviing and Durnehviir - SE.esp
+	(107)	olorosodahviing.esp
+	(108)	NoBSAIProjectileDodge.esp
+	(109)	PositiveUndressedReactions.esp
+	(110)	RDO - AFT v1.66 Patch.esp
+	(111)	Ice Spike and Ice Spear no Impale SE.esp
+	(112)	ImmersiveBendWill.esp
+	(113)	MerchantsInstantlyRestockSSE.esp
+	(114)	HearthfireMultiKid_LastName.esp
+	(115)	Rings2Hands.esp
+	(116)	Items of Power.esp
+	(117)	PassTheTime.esp
+	(118)	AbsorbSoulOnDeath.esp
+	(119)	AllThievesGuildJobsConcurrently.esp
+	(120)	Companions Radiant Quests Requirement.esp
+	(121)	DHSpell.esp
+	(122)	Advanced Alteration - Telekinetics.esp
+	(123)	RealTelekinesis.esp
+	(124)	LWPlayerHeadTracking.esp
+	(125)	marrymeserana.esp
+	(126)	adenz_MarieRose.esp
+	(127)	Immersive Citizens - AI Overhaul.esp
+	(128)	The Brotherhood of Old.esp
+	(129)	Imperious - Races of Skyrim.esp
+	(130)	ECCO - Imperious Patch.esp
+	(131)	Ordinator - Perks of Skyrim.esp
+	(132)	TCBM.esp
+	(133)	Odin - Ordinator Compatibility Patch.esp
+	(134)	Apocalypse - Ordinator Compatibility Patch.esp
+	(135)	Sacrosanct - Vampires of Skyrim.esp
+	(136)	Better Vampires.esp
+	(137)	Add Sacrosanct Spells to BV.esp
+	(138)	alternate start - live another life.esp
+	(139)	RealisticWaterTwo.esp
+	(140)	Skyland Watercolor - Slow Green-RW2-iNeed.esp
+	(141)	RealisticWaterTwo - Waves - Falskaar.esp
+Saving: CRTP - Creature Types
+Saving: STAT - Actor Stats
+Save Done!
+---

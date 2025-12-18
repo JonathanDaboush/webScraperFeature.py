@@ -1,0 +1,27 @@
+{
+  "name": "wix-style-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.2",
+    "react-dnd": "^17.0.0",
+    "react-dnd-html5-backend": "^17.0.0",
+    "react-rnd": "^10.3.9",
+    "@mui/material": "^5.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9",
+    "tailwindcss": "^3.3.2",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14"
+  }
+}

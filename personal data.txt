@@ -1,0 +1,38 @@
+
+Google Advanced Data Analytics 2024
+AWS Cloud Technology Consultant 2023
+DevOps Mastery 2024
+
+diploma software development 2022 from sait Calgary ab
+
+projects:
+many data analysis projects on Kaggle. including building ai to test the likelihood of breast cancer based on hormone level data. 2023-2025
+
+data analyst 2025 
+
+git hub projects
+
+therapist 2025 https://github.com/JonathanDaboush/therapy.git an ai therapist capable of learning from books,past conversations able to change learning params via interface and persist saved data and change it.
+
+dogorcatfastai https://github.com/JonathanDaboush/DogOrCatFastAI.git detect weather image is of cat or dog.
+
+divinapopina https://github.com/JonathanDaboush/divinapopinafrontend.git a two portal restaraunt.
+
+
+skills:
+sql
+java
+JavaScript
+python
+react
+spring boot
+Linux
+flask
+hugging face
+numpy
+panadas
+Methodologies: Skilled in OOAD, SOA, UML, and Agile-Scrum for efficient project execution
+
+phone number:403-451-1983
+email:jonathandaboushdev@gmail.com
+Calgary,AB

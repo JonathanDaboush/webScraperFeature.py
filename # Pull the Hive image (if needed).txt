@@ -1,0 +1,12 @@
+# Pull the Hive image (if needed)
+docker pull apache/hive:4.0.0-alpha-1
+
+# Run the Hive container
+docker run -d \
+  -p 10000:10000 -p 10002:10002 \
+  --env SERVICE_NAME=hiveserver2 \
+  -v /home/project/data:/hive_custom_data \
+  --name myhiveserver apache/hive:4.0.0-alpha-1
+
+# Wait a few seconds for the container to start, then connect with Beeline
+docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'
